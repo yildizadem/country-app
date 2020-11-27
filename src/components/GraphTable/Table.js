@@ -78,7 +78,7 @@ function Table({ data, columns, hideOnMainTable }) {
                 <DialogTitle>Detail</DialogTitle>
                 <DialogContent>
                     <Divider />
-                    {detailData.allCells.map(cell => (
+                    {detailData && detailData.allCells.map(cell => (
                         <div className={classes.detailItem}>
                             <h3>
                                 {cell.column.Header} :
